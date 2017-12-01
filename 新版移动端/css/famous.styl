@@ -1,0 +1,235 @@
+@import '/px2rem.styl'
+@import 'reset.css'
+
+body
+  header
+    height px(100)
+    width 100%
+    display flex
+    background-color #f4f4f4
+    border-bottom 1px solid #b5b5b5
+    position fixed
+    top 0
+    left 0
+    .logo
+      flex 0 0 px(155)
+      a
+        display block
+        width px(131)
+        height px(38)
+        margin-left px(10)
+        margin-top px(30)
+        bg-image 'logo'
+        background-size 100% 100%
+    .input
+      background-color #fff
+      height px(70)
+      flex 1
+      margin-top px(15)
+      display flex
+      border-radius px(4)
+      input
+        flex 1
+        height 100%
+        font-size 13px
+        border none
+        padding-left px(26)
+      a
+        display block
+        flex 0 0 px(38)
+        margin px(16)
+        height px(38)
+        bg-image 'search'
+        background-size 100% 100%
+    .buycart
+      flex 0 0 px(100)
+      a
+        display block
+        margin-top px(25)
+        margin-left px(16)
+        width px(64)
+        height px(51)
+        bg-image 'buycart'
+        background-size 100% 100%
+        position relative
+        span
+          display block
+          width px(41)
+          height (41)
+          text-align center
+          line-height px(41)
+          color #fff
+          font-size 12px
+          background-color #e9714e
+          border-radius 100%
+          position absolute
+          top px(-16px)
+          right px(-10px)
+  .conn
+    width 100%
+    background-color #fff
+    position fixed
+    top px(100)
+    z-index 666
+    .header
+      display flex
+      height px(110)
+      border-top px(1) solid #d6d6d6
+      justify-content center
+      align-items center
+      padding-right px(40)
+      padding-left px(20)
+      a
+        flex 0 0 px(60)
+        &.a1
+          height px(37)
+          img
+            width px(19)
+            height px(37)
+            margin 0 auto
+        &.a2
+          height 100%
+          flex 1
+          img
+            width px(133)
+            height px(37)
+            margin px(33) auto 0
+        &.a3
+          height px(40)
+          img
+            width px(43)
+            height px(7)
+            margin px(16) auto 0
+    nav
+      background-color #fff
+      border-bottom px(1) solid #d1d2d2
+      height px(51)
+      ul
+        display flex
+        li
+          flex 1
+          text-align center
+          a
+            display inline
+            border-bottom px(2) solid transparent
+            color #5d5e5e
+            font-size 13px
+            padding px(16) px(4)
+            &.active
+              border-bottom px(2) solid fred
+              color fred
+  .ad
+    width 100%
+    height px(300)
+    padding-top px(10)
+    position fixed
+    top px(263)
+    left px(0)
+    background-color #efefef
+    a
+      width px(714)
+      height px(283)
+      margin 0 auto
+      bg-image 'fad'
+      background-size 100% 100%
+  .tit
+    width 100%
+    height px(90)
+    position fixed
+    top px(564)
+    left px(0)
+    background-color #efefef
+    span
+      display block
+      width px(546)
+      height px(24)
+      bg-image 'span'
+      background-size 100% 100%
+      margin px(30) auto 0
+  .lists
+    margin-top px(656)
+    display flex
+    flex-flow row wrap
+    align-content flex-start
+    justify-content space-around
+    padding 0 px(10)
+    .list
+      flex 0 0 px(349)
+      height px(588)
+      background-color #fff
+      margin-bottom px(16)
+      img
+        width px(349)
+        height px(349)
+      .price
+        margin-top px(20)
+        .span1
+          font-size 14px
+          margin-left px(18)
+        .span2
+        .span3
+          margin-left px(18)
+          color #939393
+          font-size 12px
+        .span2
+          text-decoration line-through
+      .command
+        margin-top px(10)
+        color fred
+        font-size s12
+        line-height px(30)
+        padding 0 px(18)
+        height px(28)
+        overflow hidden
+      .name
+        a
+          margin-top px(10)
+          padding 0 px(18)
+          height px(60)
+          overflow hidden
+          font-size 12px
+      .btn
+        a
+          width px(62)
+          height px(33)
+          line-height px(33)
+          text-align  center
+          color fred
+          border  px(1) solid fred
+          margin px(18)
+  .fix
+    position fixed
+    bottom 0
+    width 100%
+    height px(95)
+    background-color #f6f7f9
+    display flex
+    justify-content space-around
+    a
+      width px(63)
+      height px(65)
+      margin-top px(15)
+      &.home
+        bg-image('home')
+        background-size 100% 100%
+        &.active
+          bg-image('homea')
+          background-size 100% 100%
+      &.sort
+        bg-image('sort')
+        background-size 100% 100%
+        &.active
+          bg-image('sorta')
+          background-size 100% 100%
+      &.shopping
+        bg-image('shopping')
+        background-size 100% 100%
+        &.active
+          bg-image('shoppinga')
+          background-size 100% 100%
+      &.me
+        bg-image('me')
+        background-size 100% 100%
+        &.active
+          bg-image('mea')
+          background-size 100% 100%  

@@ -1,0 +1,553 @@
+@import '/px2rem.styl';
+header
+  height px(100)
+  width 100%
+  display flex
+  background-color #f4f4f4
+  border-bottom 1px solid #b5b5b5
+  .logo
+    flex 0 0 px(155)
+    a
+      display block
+      width px(131)
+      height px(38)
+      margin-left px(10)
+      margin-top px(30)
+      bg-image 'logo'
+      background-size 100% 100%
+  .input
+    background-color #fff
+    height px(70)
+    flex 1
+    margin-top px(15)
+    display flex
+    border-radius px(4)
+    input
+      flex 1
+      height 100%
+      font-size 13px
+      border none
+      padding-left px(26)
+    a
+      display block
+      flex 0 0 px(38)
+      margin px(16)
+      height px(38)
+      bg-image 'search'
+      background-size 100% 100%
+  .buycart
+    flex 0 0 px(100)
+    a
+      display block
+      margin-top px(25)
+      margin-left px(16)
+      width px(64)
+      height px(51)
+      bg-image 'buycart'
+      background-size 100% 100%
+      position relative
+      span
+        display block
+        width px(41)
+        height (41)
+        text-align center
+        line-height px(41)
+        color #fff
+        font-size 12px
+        background-color #e9714e
+        border-radius 100%
+        position absolute
+        top px(-16px)
+        right px(-10px)
+.slideBox
+  position relative
+  overflow hidden
+  width 100%;
+  height px(303)
+  margin-bottom px(25)
+  .bd
+    position relative
+    z-index 0
+    li
+      position relative
+      text-align center
+      a
+        display block
+        img
+          background url('../images/load.gif') center center no-repeat
+          vertical-align top
+          width 100%
+          height 100%
+  .hd
+    position absolute
+    height 28px
+    bottom 0
+    right 0
+    z-index 1
+    li
+      display inline-block
+      width 5px
+      height 5px
+      -webkit-border-radius 5px
+      -moz-border-radius 5px
+      border-radius 5px
+      text-indent -9999px
+      overflow hidden
+      margin 0 6px
+.module
+  ul
+    width 100%
+    display flex
+    flex-flow row wrap
+    align-content flex-start
+    li
+      flex 0 0 25%
+      margin-bottom px(20)
+      a
+        display block
+        text-decoration none
+      .img
+        display block
+        width px(106)
+        height px(106)
+        bg-image('m2')
+        background-size 100% 100%
+        margin 0 auto
+        &.m2
+          bg-image('m1')
+          background-size 100% 100%
+        &.m3
+          bg-image('m3')
+          background-size 100% 100%
+        &.m4
+           bg-image('m4')
+           background-size 100% 100%
+        &.m5
+          bg-image('m5')
+          background-size 100% 100%
+        &.m6
+          bg-image('m6')
+          background-size 100% 100%
+        &.m7
+          bg-image('m7')
+          background-size 100% 100%
+        &.m8
+          bg-image('m8')
+          background-size 100% 100%
+      .font
+        text-align center
+        font-size 12px
+        color #020202
+        display block
+        margin-top px(15)
+.beauty
+  width px(750)
+  height px(190)
+  margin-top px(45)
+  a
+    display block
+    width px(750)
+    height px(190)
+    bg-image('beauty')
+    background-size 100% 100%
+.guotai
+  width px(750)
+  height px(881)
+  a
+    display block
+    height 100%
+    bg-image('guotai')
+    background-size 100% 100%
+.spikecon
+  background-color #fff
+  width px(634)
+  margin px(22) auto 0
+  padding px(15)
+  padding-bottom px(20)
+  .tit
+    font-size 14px
+    color #f32904
+    font-weight bold
+    border-bottom 1px solid #d2d2d2
+    padding-bottom px(14)
+    padding-top px(5)
+  .con
+    .list
+      margin-top px(52)
+      display flex
+      img
+        flex 0 0 px(198)
+        height px(198)
+      .listdetail
+        flex 1
+        margin-left px(18)
+        .name
+          height px(38)
+          overflow hidden
+          font-size 15px
+          color #000
+        .price
+          height px(40)
+          overflow hidden
+          padding-left px(12)
+          margin-top px(8)
+          .now
+            font-size 15px
+            font-weight bold
+            color #000
+          .old
+            font-size 13px
+            color #515050
+            text-decoration line-through
+            margin-left px(10)
+        .bar
+          width px(406)
+          height px(10)
+          background-color #ccc
+          margin-left px(16)
+          margin-top px(10)
+          div
+            width 66%
+            height 100%
+            background-color #e77600
+        .order
+          color #000
+          font-size 13px
+          margin-left px(15)
+          margin-top px(10)
+          span
+            color #f32904
+            font-weight bold
+        .time
+          margin-left px(15)
+          margin-top px(8)
+          span
+            color #f32904
+            font-size 13px
+    .move
+      border-top 1px solid #d2d2d2
+      margin-top px(34)
+      padding-top px(16)
+      a
+        color #0392d5
+        font-size 13px
+.treasure
+  width 100%
+  background-color #ffffff
+  margin-top px(15px)
+  padding-top px(15)
+  .font
+    padding-left px(48)
+    .tat
+      display inline-block
+      width px(49)
+      height px(51)
+      bg-image('tat')
+      background-size 100% 100%
+    .title
+      display inline-block
+      font-size 17px
+      color #000
+      font-weight bold
+      margin-left px(10)
+      position relative
+      top px(-8)
+  .con
+    .list
+      background-color #f4f4f4
+      height px(310)
+      width px(660)
+      margin 0 auto
+      margin-top px(15)
+      a
+        display block
+        height 100%
+        .imgcon
+          width px(350)
+          height 100%
+          float left
+          img
+            margin px(50)
+            width px(180)
+            height px(205)
+
+            &.img
+              width px(253)
+              height px(195)
+        .conprice
+          float left
+          width px(300)
+          .ticon
+            span
+              display block
+              margin-top px(50)
+              height px(38)
+              width px(146)
+              bg-image('ticon')
+              background-size 100% 100%
+          .tname
+            color #000
+            font-size 13px
+            font-weight bold
+            height px(32)
+            overflow hidden
+            margin px(24) 0
+          .price
+            font-size 15px
+            color #cb0606
+            font-weight bold
+            margin-bottom px(22)
+          .end
+            color #5a5a5a
+            font-size 12px
+.movecart
+  width px(750)
+  height px(370)
+  margin-top px(40)
+  a
+    display block
+    height 100%
+    bg-image('movecart')
+    background-size 100% 100%
+.member
+  background-color #f7f8f8
+  padding px(15)
+  margin-top px(25)
+  div
+    a
+      display block
+      width px(668)
+      margin 0 auto
+      height px(313)
+      bg-image('bg')
+      background-size 100% 100%
+.imglist
+  background-color #fff
+  margin-top px(10)
+  .list
+    margin-bottom px(50)
+    .bg
+      a
+        display block
+        width px(750)
+        height px(310)
+        bg-image('bg1')
+        background-size 100% 100%
+        &.bg2
+          bg-image('bg2')
+          background-size 100% 100%
+        &.bg3
+          bg-image('bg3')
+          background-size 100% 100%
+        &.bg4
+          bg-image('bg4')
+          background-size 100% 100%
+        &.bg5
+          bg-image('bg5')
+          background-size 100% 100%
+        &.bg6
+          bg-image('bg6')
+          background-size 100% 100%
+        &.bg7
+          bg-image('bg7')
+          background-size 100% 100%
+        &.bg8
+          bg-image('bg8')
+          background-size 100% 100%
+        &.bg9
+          bg-image('bg9')
+          background-size 100% 100%
+        &.bg10
+          bg-image('bg10')
+          background-size 100% 100%
+        &.bg11
+          bg-image('bg11')
+          background-size 100% 100%
+        &.bg12
+          bg-image('bg12')
+          background-size 100% 100%
+        &.bg13
+          bg-image('bg13')
+          background-size 100% 100%
+    .item
+      //display flex
+      //justify-content space-around
+      margin-top px(25)
+      width 100%
+      display flex
+      flex-flow row wrap
+      align-content flex-start
+      justify-content space-around
+      a
+        display block
+        text-decoration none
+        width px(210)
+        height px(230)
+        background-color #f4f6f5
+        margin-top px(20)
+        img
+          width 100%
+          height 100%
+.featured
+  background-color #fff
+  .con
+    background-color #fff
+    .lists
+      display flex
+      flex-flow row wrap
+      justify-content center
+      .list
+        width px(319)
+        height px(319)
+        position relative
+        margin px(20) px(15)
+        .qiu
+          width px(317)
+          height px(317)
+          border-radius 100%
+          margin 0 auto
+          bg-image_jpg('qiu')
+          background-size 100% 100%
+          &.qiu2
+            bg-image_jpg('qiu2')
+            background-size 100% 100%
+          &.qiu3
+            bg-image_jpg('qiu3')
+            background-size 100% 100%
+          &.qiu4
+            bg-image_jpg('qiu4')
+            background-size 100% 100%
+        a
+          position absolute
+          bottom px(-8)
+          display block
+          width 100%
+          height px(120)
+          display flex
+          background-color rgba(230,230,230,.8)
+          text-decoration none
+          .imglogo
+            flex 0 0 px(138)
+            height px(120)
+            display flex
+            align-items center
+            justify-content center
+            img
+              width px(87)
+              height px(84)
+          .content
+            flex 1
+            padding-top px(28)
+            height px(120)
+            p
+              font-size 12px
+              color #000
+              height px(30)
+              padding px(2)
+              overflow hidden
+.discovery
+  padding px(50) px(20) 0 px(20)
+  background-color #f7f8f8
+  .con
+    padding px(40) px(16) 0 px(16)
+    background-color #fff
+    margin-bottom px(120)
+    p
+      color #000
+      font-size 19px
+      font-weight bold
+      margin-bottom px(40)
+    .lists
+      .list
+        display flex
+        background-color #f8f8f8
+        margin-top px(2)
+        .img
+          flex 0 0 px(321)
+          height px(229)
+          a
+            height 100%
+            display block
+            img
+              width 100%
+              height 100%
+        .cont
+          flex 1
+          position relative
+          height px(229)
+          .name
+            font-size 13px
+            height px(74)
+            overflow hidden
+            margin px(20)
+            line-height px(40)
+            a
+              height 100%
+              display block
+              color #000
+          .like
+            position absolute
+            bottom 0px
+            left 0px
+            font-size 13px
+            color #767676
+            margin px(20)
+            display flex
+            .span1
+              flex 0 0 px(190)
+            .span2
+              flex 0 0 px(29)
+              height px(25)
+              bg-image('like')
+              background-size 100% 100%
+            .span3
+              flex 1
+              margin-left px(10)
+              position relative
+              top px(-3)
+    .more
+      display block
+      color #0392d5
+      font-size 13px
+      width 100%
+      height px(74)
+      line-height px(74)
+      border-top 1px solid #d2d2d2
+      margin-top px(20)
+
+.fix
+  position fixed
+  bottom 0
+  width 100%
+  height px(95)
+  background-color #f6f7f9
+  display flex
+  justify-content space-around
+  a
+    width px(63)
+    height px(65)
+    margin-top px(15)
+    &.home
+      bg-image('home')
+      background-size 100% 100%
+      &.active
+        bg-image('homea')
+        background-size 100% 100%
+    &.sort
+      bg-image('sort')
+      background-size 100% 100%
+      &.active
+        bg-image('sorta')
+        background-size 100% 100%
+    &.shopping
+      bg-image('shopping')
+      background-size 100% 100%
+      &.active
+        bg-image('shoppinga')
+        background-size 100% 100%
+    &.me
+      bg-image('me')
+      background-size 100% 100%
+      &.active
+        bg-image('mea')
+        background-size 100% 100%  
