@@ -11,6 +11,7 @@ body
     position fixed
     top 0
     left 0
+    z-index 666
     .logo
       flex 0 0 px(155)
       a
@@ -65,66 +66,247 @@ body
           position absolute
           top px(-16px)
           right px(-10px)
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-  .fix
+  .tit
+    width 100%
+    display flex
+    background-color #fff
+    border-bottom px(1) solid #c1c2c2
+    height px(99)
+    position fixed
+    top px(100)
+    .f
+      flex 0 0 40%
+      height px(99)
+      a
+        width px(19)
+        height px(37)
+        margin px(32) 0 0 px(24)
+        img
+          width 100%
+          height 100%
+    .h
+      flex 0 0 40%
+      height px(99)
+      a
+        width px(80)
+        height 100%
+        float right
+        font-size 15px
+        color #8a8a8a
+        line-height px(90)
+        text-align center
+        &.a
+          position relative
+          margin-right px(20)
+          margin-left px(20)  
+          span
+            display block
+            width px(44)
+            height px(39)
+            position absolute
+            right px(30)
+            top px(29px)
+            &.num
+              background-color #ff0000
+              position absolute
+              right px(10)
+              top px(10)
+              width px(37)
+              height px(37)
+              border-radius 50%
+              text-align center
+              line-height px(37)
+              font-size 12px
+              color #fff
+            &.say
+              bg-image 'say'
+              background-size 100% 100%
+    .t
+      flex 1            
+      height px(99)
+      a
+        width px(145)
+        height px(40)
+        margin px(29) auto 0
+        bg-image 'shop'
+        background-size 100% 100%
+  .lists
+    margin-top px(235)
+    .list
+      margin px(1) auto 0
+      width px(719)
+      height px(250)
+      background-color #fff
+      border-bottom px(1) solid #f0f2f2
+      display flex
+      .ico
+        display flex
+        flex 0 0 px(72)
+        justify-content center
+        align-items center
+        span
+          display block
+          width px(36)
+          height px(37)
+          bg-image 'icosa'
+          background-size 100% 100%
+          &.active
+            bg-image 'icos'
+            background-size 100% 100%
+          &.fordel
+            display none
+      .img
+        flex 0 0 px(200)
+        div
+          width px(200)
+          height px(200)
+          border-radius px(5)
+          overflow hidden
+          border px(1) solid #e9e9e9
+          margin-top px(24)
+          img
+            width 100%
+            heihgt 100%
+      .font
+        flex 1
+        padding-top px(24)
+        padding-left px(24)
+        padding-right px(24)
+        p
+          font-size s12
+          color #7e808c
+          height px(30)
+          overflow hidden
+          &.first
+            color #010101
+            height px(62)
+          &.last
+            margin-top px(10)
+        .pn
+          display flex
+          margin-top px(48)
+          .price
+            flex 1
+            color #ef2d2e
+            font-size 14px
+            line-height px(60)
+          .num
+            flex 0 0 px(172)
+            display flex
+            height px(47)
+            border px(1) solid #d7d7d7
+            button
+              display block
+              border none
+              font-size 18px
+              flex 0 0 px(50)
+              text-align center
+              height px(47)
+              line-height px(44)
+              background-color transparent
+            :first-child
+              color #bfbfbf
+            span
+              color #010101
+              text-align center
+              line-height px(46)
+              display block
+              flex 1
+              font-size 13px
+              height 100%
+              border-right 1px solid #d7d7d7
+              border-left 1px solid #d7d7d7      
+  .foryou
+    margin-bottom px(120)
+    .ic
+      width px(255)
+      height px(33)
+      margin px(40) auto
+      bg-image 'foryou'
+      background-size 100% 100%
+    .conlists
+      display flex
+      flex-flow row wrap
+      align-content flex-start
+      justify-content space-around
+      padding 0 px(8)
+      .conlist
+        width px(349)  
+        height px(481)
+        background-color #fff
+        margin-bottom px(15)
+        img
+          width px(295)
+          height px(295)
+          margin px(30) auto 0
+        p
+          color #010101
+          height px(62)
+          line-height px(32)
+          font-size s12
+          overflow hidden
+          padding 0 px(20)
+          margin-top px(25)
+        .fontp
+          display flex
+          padding-top px(20)
+          .old
+            flex 1
+            color #939393
+            font-size s12
+            padding-left px(20)
+            text-decoration line-through
+          .now
+            flex 0
+            font-size 14px
+            color #fa0707
+            padding-left px(20)
+          .tocart
+            flex 0 0 px(36)
+            height px(37)
+            margin-right px(35)
+            bg-image 'tocart'
+            background-size 100% 100%
+            
+  .fixt
     position fixed
     bottom 0
     width 100%
-    height px(95)
+    height px(100)
     background-color #f6f7f9
     display flex
-    justify-content space-around
     a
-      width px(63)
-      height px(65)
-      margin-top px(15)
-      &.home
-        bg-image('home')
-        background-size 100% 100%
-        &.active
-          bg-image('homea')
-          background-size 100% 100%
-      &.sort
-        bg-image('sort')
-        background-size 100% 100%
-        &.active
-          bg-image('sorta')
-          background-size 100% 100%
-      &.shopping
-        bg-image('shopping')
-        background-size 100% 100%
-        &.active
-          bg-image('shoppinga')
-          background-size 100% 100%
-      &.me
-        bg-image('me')
-        background-size 100% 100%
-        &.active
-          bg-image('mea')
-          background-size 100% 100%  
+      flex 0 0 px(220)
+      height px(100)
+      text-align center
+      font-size 16px
+      line-height px(100)
+      background-color #e4393c
+      color #fff
+      font-weight 700
+    .div
+      flex 1
+      text-align center
+      line-height px(100)
+      font-size 16px
+      span
+        color #e93b3d
+  .fixtt
+    position fixed
+    bottom 0
+    width 100%
+    height px(100)
+    background-color #f6f7f9
+    display none
+    .b
+      display block 
+      width px(140)
+      height px(60)
+      line-height px(30)
+      color #fff
+      margin-top px(20)
+      border none
+      border-radius px(2)
+      background-color #f19325
+      float right
+      margin-right px(20)
