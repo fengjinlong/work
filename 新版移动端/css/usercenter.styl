@@ -1,0 +1,175 @@
+@import '/px2rem.styl'
+@import 'common.css'
+header
+  position fixed
+  top 0
+  left 0
+.user
+  width 100%
+  height px(360)
+  bg-image_jpg('cenbg')
+  background-size 100% 100%
+  margin-bottom px(20)
+  margin-top px(102)
+  .name
+    width 100%
+    overflow hidden
+    padding-top px(19)
+    .username
+      color #fff
+      float left
+      margin-left px(20)
+      span
+        color #fff
+        font-size 12px
+    .mess
+      float right
+      color #fff
+      margin-right px(20)
+      font-size 12px
+      span
+        display inline-block
+        margin-right px(10)
+        vertical-align middle
+        width px(26)
+        height px(22)
+        bg-image('speek')
+        background-size 100% 100%
+  .con
+    margin px(15) auto
+    border-radius px(6)
+    background-color #fff
+    width px(675)        
+    height px(263)  
+    .tit
+      .like
+        color #030303
+        font-size 15px
+        font-weight bold
+        float left
+        margin px(10) 0 px(8) px(30)
+      .change
+        color #5d5e5e
+        font-size 12px
+        float right
+        margin px(14) px(30) 0 0
+        span
+          display inline-block
+          margin-right px(10)
+          vertical-align middle
+          width px(28)
+          height px(24)
+          bg-image('change')
+          background-size 100% 100%
+  .pro
+    display flex
+    justify-content space-around
+    padding 0 px(20)
+    a
+      img
+        width px(166)
+        height px(166)
+      div
+        width px(120)
+        margin px(8) auto
+        span
+          float left
+          border none
+          font-size 0
+          width px(23)
+          height px(22)
+          bg-image('start')
+          background-size 100% 100%
+          &.active
+            bg-image('startful')
+            background-size 100% 100%
+.main
+  width px(721)
+  height px(171)
+  margin 0 auto
+  margin-bottom px(15)
+  .tit
+    height px(76)
+    line-height px(76)
+    background-color #fff
+    a
+      &.font 
+        float left
+        font-size 16px
+        color #222
+        font-weight bold
+        padding 0 px(20)
+      &.link 
+        float right 
+        font-size 12px
+        color #979797
+        padding 0 px(20)
+  .con
+    margin-top px(2)
+    height px(94)
+    line-height px(94)
+    background-color #fff
+    display flex
+    justify-content space-around
+    a
+      display inline-block
+      font-size 13px
+      color #222
+      span
+        display inline-block
+        width px(30)
+        height px(32)
+        bg-image('usericon')
+        background-size 100% 100%
+        vertical-align sub
+        &.span2
+          width px(32)
+          height px(33)
+          bg-image('usericon2')
+          background-size 100% 100%
+        &.span3
+          width px(33)
+          height px(33)
+          bg-image('usericon3')
+          background-size 100% 100%
+        &.span4
+          width px(32)
+          height px(31)
+          bg-image('usericon4')
+          background-size 100% 100%
+        &.span5
+          width px(38)
+          height px(38)
+          bg-image('usericon5')
+          vertical-align text-top
+          background-size 100% 100%
+        &.span6
+          width px(32)
+          height px(31)
+          bg-image('usericon6')
+          background-size 100% 100%
+        &.span7
+          width px(34)
+          height px(28)
+          bg-image('usericon7')
+          background-size 100% 100%
+        &.span8
+          width px(28)
+          height px(28)
+          bg-image('usericon8')
+          background-size 100% 100%
+  &.last
+    height px(76)      
+.btn
+  display block
+  font-size 13px
+  font-weight bold
+  color #222
+  width px(206)
+  height px(71)
+  text-align center
+  line-height px(71)
+  border-radius px(8)
+  border px(1) solid #c8cbcb
+  margin px(30) auto px(130)
+  background-color #fff 

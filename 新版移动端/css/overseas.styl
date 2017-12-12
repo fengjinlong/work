@@ -1,237 +1,142 @@
-@import '/px2rem.styl';
-header
-  height px(100)
-  width 100%
-  display flex
-  background-color #f4f4f4
-  border-bottom 1px solid #b5b5b5
-  .logo
-    flex 0 0 px(155)
-    a
-      display block
-      width px(131)
-      height px(38)
-      margin-left px(10)
-      margin-top px(30)
-      bg-image('logo')
-      background-size 100% 100%
-  .input
-    background-color #fff
-    height px(70)
-    flex 1
-    margin-top px(15)
-    display flex
-    border-radius px(4)
-    input
-      flex 1
-      height 100%
-      font-size 13px
-      border none
-      padding-left px(26)
-    a
-      display block
-      flex 0 0 px(38)
-      margin px(16)
-      height px(38)
-      bg-image('search')
-      background-size 100% 100%
-  .buycart
-    flex 0 0 px(100)
-    a
-      display block
-      margin-top px(25)
-      margin-left px(16)
-      width px(64)
-      height px(51)
-      bg-image('buycart')
-      background-size 100% 100%
-      position relative
-      span
-        display block
-        width px(41)
-        height (41)
-        text-align center
-        line-height px(41)
-        color #fff
-        font-size 12px
-        background-color #e9714e
-        border-radius 100%
-        position absolute
-        top px(-16px)
-        right px(-10px)
-.slideBox
-  position relative
-  overflow hidden
-  width 100%;
-  height px(303)
-  margin-bottom px(25)
-  .bd
+@import '/px2rem.styl'
+@import 'common.css'
+body
+  background-color #fff
+  .slideBox
     position relative
-    z-index 0
-    li
+    overflow hidden
+    width 100%;
+    height px(303)
+    margin-bottom px(25)
+    .bd
       position relative
-      text-align center
-      a
-        display block
-        img
-          background url('../images/load.gif') center center no-repeat
-          vertical-align top
-          width 100%
-          height 100%
-  .hd
-    position absolute
-    height 28px
-    bottom 0
-    right 0
-    z-index 1
-    li
-      display inline-block
-      width 5px
-      height 5px
-      -webkit-border-radius 5px
-      -moz-border-radius 5px
-      border-radius 5px
-      text-indent -9999px
-      overflow hidden
-      margin 0 6px
-.module
-  ul
-    width 100%
-    display flex
-    flex-flow row wrap
-    align-content flex-start
-    li
-      flex 0 0 25%
-      margin-bottom px(20)
-      a
-        display block
-        text-decoration none
-      .img
-        display block
-        width px(106)
-        height px(106)
-        bg-image('s1')
-        background-size 100% 100%
-        margin 0 auto
-        &.m2
-          bg-image('s2')
-          background-size 100% 100%
-        &.m3
-          bg-image('s3')
-          background-size 100% 100%
-        &.m4
-          bg-image('s4')
-          background-size 100% 100%
-        &.m5
-          bg-image('s5')
-          background-size 100% 100%
-        &.m6
-          bg-image('s6')
-          background-size 100% 100%
-        &.m7
-          bg-image('s7')
-          background-size 100% 100%
-        &.m8
-          bg-image('s8')
-          background-size 100% 100%
-      .font
+      z-index 0
+      li
+        position relative
         text-align center
-        font-size 12px
-        color #020202
-        display block
-        margin-top px(15)
-.line
-  width px(400)
-  height px(40)
-  margin px(20) auto 0
-  display flex
-  span
-    display inline-block
-    &.span1
-      flex 0 0 px(68)
-      height px(1)
-      border 1px solid #777
-      margin-top px(20px)
-    &.span2
-      flex 1
-      text-align center
-      font-size 15px
-      color #020202
-      line-height px(40)
-    &.span3
-      flex 0 0 px(68)
-      height px(1)
-      border 1px solid #777
-      margin-top px(20px)
-.lists
-  padding-bottom px(120)
-  .list
-    margin-top px(20)
-    a
-      display flex
-      margin 0 auto
-      width px(665)
-      height px(245)
-      text-decoration none
-      .imgcon
-        flex 0 0 px(452)
-        height 100%
-        img
-          width 100%
-          height 100%
-      .font
-        flex 1
-        background-color #efefef
-        img
+        a
           display block
-          margin px(29) auto 0
-          width px(178)
-          height px(69.3)
-        .p1
+          img
+            background url('../images/load.gif') center center no-repeat
+            vertical-align top
+            width 100%
+            height 100%
+    .hd
+      position absolute
+      height 28px
+      bottom 0
+      right 0
+      z-index 1
+      li
+        display inline-block
+        width 5px
+        height 5px
+        -webkit-border-radius 5px
+        -moz-border-radius 5px
+        border-radius 5px
+        text-indent -9999px
+        overflow hidden
+        margin 0 6px
+  .module
+    ul
+      width 100%
+      display flex
+      flex-flow row wrap
+      align-content flex-start
+      li
+        flex 0 0 25%
+        margin-bottom px(20)
+        a
+          display block
+          text-decoration none
+        .img
+          display block
+          width px(106)
+          height px(106)
+          bg-image('s1')
+          background-size 100% 100%
+          margin 0 auto
+          &.m2
+            bg-image('s2')
+            background-size 100% 100%
+          &.m3
+            bg-image('s3')
+            background-size 100% 100%
+          &.m4
+            bg-image('s4')
+            background-size 100% 100%
+          &.m5
+            bg-image('s5')
+            background-size 100% 100%
+          &.m6
+            bg-image('s6')
+            background-size 100% 100%
+          &.m7
+            bg-image('s7')
+            background-size 100% 100%
+          &.m8
+            bg-image('s8')
+            background-size 100% 100%
+        .font
+          text-align center
           font-size 12px
           color #020202
-          text-align center
-          margin-top px(17)
-        .p2
-          font-size 12px
-          color #f93f3f
-          text-align center
-          margin-top px(19)
-          
-.fix
-  position fixed
-  bottom 0
-  width 100%
-  height px(95)
-  background-color #f6f7f9
-  display flex
-  justify-content space-around
-  a
-    width px(63)
-    height px(65)
-    margin-top px(15)
-    &.home
-      bg-image('home')
-      background-size 100% 100%
-      &.active
-        bg-image('homea')
-        background-size 100% 100%
-    &.sort
-      bg-image('sort')
-      background-size 100% 100%
-      &.active
-        bg-image('sorta')
-        background-size 100% 100%
-    &.shopping
-      bg-image('shopping')
-      background-size 100% 100%
-      &.active
-        bg-image('shoppinga')
-        background-size 100% 100%
-    &.me
-      bg-image('me')
-      background-size 100% 100%
-      &.active
-        bg-image('mea')
-        background-size 100% 100%
-        
+          display block
+          margin-top px(15)
+  .line
+    width px(400)
+    height px(40)
+    margin px(20) auto 0
+    display flex
+    span
+      display inline-block
+      &.span1
+        flex 0 0 px(68)
+        height px(1)
+        border 1px solid #777
+        margin-top px(20px)
+      &.span2
+        flex 1
+        text-align center
+        font-size 15px
+        color #020202
+        line-height px(40)
+      &.span3
+        flex 0 0 px(68)
+        height px(1)
+        border 1px solid #777
+        margin-top px(20px)
+  .lists
+    padding-bottom px(120)
+    .list
+      margin-top px(20)
+      a
+        display flex
+        margin 0 auto
+        width px(665)
+        height px(245)
+        text-decoration none
+        .imgcon
+          flex 0 0 px(452)
+          height 100%
+          img
+            width 100%
+            height 100%
+        .font
+          flex 1
+          background-color #efefef
+          img
+            display block
+            margin px(29) auto 0
+            width px(178)
+            height px(69.3)
+          .p1
+            font-size 12px
+            color #020202
+            text-align center
+            margin-top px(17)
+          .p2
+            font-size 12px
+            color #f93f3f
+            text-align center
+            margin-top px(19)

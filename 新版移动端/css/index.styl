@@ -1,64 +1,6 @@
-@import '/px2rem.styl';
-header
-  height px(100)
-  width 100%
-  display flex
-  background-color #f4f4f4
-  border-bottom 1px solid #b5b5b5
-  .logo
-    flex 0 0 px(155)
-    a
-      display block
-      width px(131)
-      height px(38)
-      margin-left px(10)
-      margin-top px(30)
-      bg-image 'logo'
-      background-size 100% 100%
-  .input
-    background-color #fff
-    height px(70)
-    flex 1
-    margin-top px(15)
-    display flex
-    border-radius px(4)
-    input
-      flex 1
-      height 100%
-      font-size 13px
-      border none
-      padding-left px(26)
-    a
-      display block
-      flex 0 0 px(38)
-      margin px(16)
-      height px(38)
-      bg-image 'search'
-      background-size 100% 100%
-  .buycart
-    flex 0 0 px(100)
-    a
-      display block
-      margin-top px(25)
-      margin-left px(16)
-      width px(64)
-      height px(51)
-      bg-image 'buycart'
-      background-size 100% 100%
-      position relative
-      span
-        display block
-        width px(41)
-        height (41)
-        text-align center
-        line-height px(41)
-        color #fff
-        font-size 12px
-        background-color #e9714e
-        border-radius 100%
-        position absolute
-        top px(-16px)
-        right px(-10px)
+@import '/px2rem.styl'
+@import 'common.css'
+
 .slideBox
   position relative
   overflow hidden
@@ -412,39 +354,29 @@ header
             bg-image_jpg('qiu2')
             background-size 100% 100%
           &.qiu3
-            bg-image_jpg('qiu3')
+            bg-image('qiu3')
             background-size 100% 100%
           &.qiu4
             bg-image_jpg('qiu4')
             background-size 100% 100%
         a
           position absolute
-          bottom px(-8)
+          bottom px(-5)
           display block
           width 100%
-          height px(120)
+          height px(119)
           display flex
-          background-color rgba(230,230,230,.8)
-          text-decoration none
-          .imglogo
-            flex 0 0 px(138)
-            height px(120)
-            display flex
-            align-items center
-            justify-content center
-            img
-              width px(87)
-              height px(84)
-          .content
-            flex 1
-            padding-top px(28)
-            height px(120)
-            p
-              font-size 12px
-              color #000
-              height px(30)
-              padding px(2)
-              overflow hidden
+          bg-image('qiu1bg')
+          background-size 100% 100%
+          &.nth2
+            bg-image('qiu2bg')
+            background-size 100% 100%
+          &.nth3
+            bg-image('qiu3bg')
+            background-size 100% 100%
+          &.nth4
+            bg-image('qiu4bg')
+            background-size 100% 100%
 .discovery
   padding px(50) px(20) 0 px(20)
   background-color #f7f8f8
@@ -515,40 +447,3 @@ header
       line-height px(74)
       border-top 1px solid #d2d2d2
       margin-top px(20)
-
-.fix
-  position fixed
-  bottom 0
-  width 100%
-  height px(95)
-  background-color #f6f7f9
-  display flex
-  justify-content space-around
-  a
-    width px(63)
-    height px(65)
-    margin-top px(15)
-    &.home
-      bg-image('home')
-      background-size 100% 100%
-      &.active
-        bg-image('homea')
-        background-size 100% 100%
-    &.sort
-      bg-image('sort')
-      background-size 100% 100%
-      &.active
-        bg-image('sorta')
-        background-size 100% 100%
-    &.shopping
-      bg-image('shopping')
-      background-size 100% 100%
-      &.active
-        bg-image('shoppinga')
-        background-size 100% 100%
-    &.me
-      bg-image('me')
-      background-size 100% 100%
-      &.active
-        bg-image('mea')
-        background-size 100% 100%  
