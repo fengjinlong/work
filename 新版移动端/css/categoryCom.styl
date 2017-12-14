@@ -1,4 +1,5 @@
 @import '/px2rem.styl'
+@import 'common.css'
 
 body
   width 100%
@@ -73,7 +74,7 @@ body
     display flex
     nav
       flex 0 0 px(177)
-      height px(940)
+      height px(950)
       overflow hidden
       ul
         li
@@ -102,15 +103,16 @@ body
       flex 1
       .scrollTwo
         width 100%
-        height px(940)
+        height px(950)
         overflow hidden
         .lists
           .list
             width 100%
-            min-height px(930)
+            min-height px(950)
             &.list0
               margin-bottom px(10)
               .ad
+                margin-bottom px(30)
                 a
                   display block
                   width 100%
@@ -133,7 +135,7 @@ body
                       bg-image 'xian'
                       background-size 100% 100%
               .recommends
-                padding-top px(36)
+                padding-bottom px(36)
                 p
                   font-size s12
                   color pcolor
@@ -197,6 +199,7 @@ body
             &.list9
               margin-bottom px(10)
               .ad
+                margin-bottom px(30)
                 a
                   display block
                   width 100%
@@ -212,7 +215,7 @@ body
                   bg-image 'enter'
                   background-size 100% 100%
               .recommends
-                padding-top px(36)
+                padding-bottom px(36)
                 p
                   font-size s12
                   color pcolor
@@ -310,40 +313,3 @@ body
                 a
                   bg-image 'kitchenfont'
                   background-size 100% 100%
-
-  .fix
-    position fixed
-    bottom 0
-    width 100%
-    height px(95)
-    background-color #f6f7f9
-    display flex
-    justify-content space-around
-    a
-      width px(63)
-      height px(65)
-      margin-top px(15)
-      &.home
-        bg-image 'home'
-        background-size 100% 100%
-        &.active
-          bg-image 'homea'
-          background-size 100% 100%
-      &.sort
-        bg-image 'sort'
-        background-size 100% 100%
-        &.active
-          bg-image 'sorta'
-          background-size 100% 100%
-      &.shopping
-        bg-image 'shopping'
-        background-size 100% 100%
-        &.active
-          bg-image 'shoppinga'
-          background-size 100% 100%
-      &.me
-        bg-image 'me'
-        background-size 100% 100%
-        &.active
-          bg-image 'mea'
-          background-size 100% 100%  

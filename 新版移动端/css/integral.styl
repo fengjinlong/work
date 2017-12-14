@@ -1,0 +1,101 @@
+@import '/px2rem.styl'
+@import 'common.css'
+  header
+    position fixed
+    top 0
+    left 0
+  .header
+    background-color #fff
+    margin-top px(100)
+    display flex
+    height px(99)
+    border-top px(1) solid #d6d6d6
+    justify-content center
+    align-items center
+    padding-right px(23)
+    padding-left px(3)
+    a
+      flex 0 0 px(60)
+      &.a1
+        height px(37)
+        img
+          width px(19)
+          height px(37)
+          margin 0 auto
+      &.a2
+        height 100%
+        flex 1
+        img
+          width px(181)
+          height px(38)
+          margin px(31) auto 0
+      &.a3
+        height px(40)
+        img
+          width px(43)
+          height px(7)
+          margin px(16) auto 0
+  .img
+    width 100% 
+    height px(283)
+    bg-image('inte')
+    background-size 100% 100%
+  .img2
+    span
+      display block
+      width px(327)
+      height px(24)
+      bg-image('goodsmall')
+      background-size 100% 100%
+      margin px(30) auto
+  .lists
+    margin-bottom px(110)
+    .list
+      width px(716)
+      height px(239)
+      margin 0 auto
+      display flex
+      background-color #fff
+      margin-top px(8)
+      img
+        flex 0 0 px(192)
+        height px(192)
+        margin-left px(46)
+        margin-top px(23)
+        overflow hidden
+      .font
+        flex 1
+        padding px(26) px(30) 0 px(76)
+        .name
+          color #010101
+          font-size 12px
+          line-height px(34)
+          overflow hidden
+          text-overflow ellipsis
+          display -webkit-box
+          -webkit-line-clamp 2
+          -webkit-box-orient vertical
+        .integral
+          padding-top px(20)
+          .span
+            color #ef2c2c
+            font-size 17px
+            font-weight bold
+            padding-left px(4)
+        .price
+          position relative
+          padding-top px(18)
+          span 
+            color #939393
+            font-size 12px
+          a
+            position absolute
+            top px(14)
+            right 0
+            color #ef2c2c
+            border px(1) solid #ef2c2c
+            font-size 12px
+            padding px(2) px(5)
+            
+
+          
