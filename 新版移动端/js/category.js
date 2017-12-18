@@ -1,16 +1,5 @@
 $(function () {
 
-//获取初始高度，考虑微信,暂时不调用
-  function initscrollHeight () {
-    var wechat = 130;
-    var footer = $('.fix').height();
-    var header = $('header').height();
-    var screen = $(window).height();
-
-    var initheight = (screen - header - footer - wechat) / 75 + 'rem';
-    // $('.scrollOne').css({height: initheight,overflow: 'hidden'})
-    // scrollOne.refresh()
-  }
 // 初始化
   var scrollOne = new BScroll('.scrollOne',{
     scrollY: true,

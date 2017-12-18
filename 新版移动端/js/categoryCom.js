@@ -8,3 +8,6 @@
     click: true,
     probeType: 3
   })
+  $('.content').on('touchend', function () {
+      $('header input').blur()
+  })
