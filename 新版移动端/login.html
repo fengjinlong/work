@@ -30,7 +30,7 @@
   <div class="password">
     <a class="icon1" href="javascript:void(0)"></a>
     <input class="dprchangefont" type="password" placeholder="请输入登录密码">
-    <a class="icon2" href="javascript:void(0)"></a>
+    <a class="icon2 seepass" href="javascript:void(0)"></a>
   </div>
   <div class="login">
     <a class="dprchangefont" href="javascript:void(0)">LOGIN 登录</a>
@@ -54,9 +54,18 @@
   <script>
     $('input').blur(function () {
       $('footer').show()
+      $('.login').show()
     })
     $('input').focus(function () {
       $('footer').hide() 
+      $('.login').hide() 
+    })
+    $('.seepass').on('touchend', function () {
+      if($(this).parent().find('input').attr('type') === 'password'){
+        $(this).parent().find('input').removeAttr('type')
+      } else {
+        $(this).parent().find('input').attr('type', 'password')
+      }
     })
   </script>
 </body>

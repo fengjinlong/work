@@ -8,6 +8,10 @@
     click: true,
     probeType: 3
   })
+
+  // scrollTwo.on('pullingDown', function () {
+  //   console.log('ok')
+  // })
   $('.content').on('touchend', function () {
       $('header input').blur()
   })

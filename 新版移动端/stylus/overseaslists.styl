@@ -1,0 +1,125 @@
+@import '/px2rem.styl'
+@import 'common.css'
+
+html
+  background-color #fff
+body
+  header
+    position fixed
+    top 0
+    left 0
+    z-index 66
+  .choose
+    background-color #f9f9f9
+    margin-top px(100)
+    height px(88)
+    display flex
+    div
+      flex 1
+      text-align center
+      line-height px(88)
+      font-size 13px
+      position relative
+      &.active
+        color #e90a25
+      a
+        display inline-block
+        position relative
+        top px(8)
+        &.a
+          top px(1)
+        span
+          display block
+          width px(21)
+          height px(9)
+          margin-left px(8)
+          margin-bottom px(5)
+          &.span1
+            bg-image 'fupred'
+            background-size 100% 100%
+          &.rotate
+            transform rotate(180deg)
+            -ms-transform rotate(180deg)
+            -moz-transform rotate(180deg)
+            -webkit-transform rotate(180deg)
+          &.remove
+            bg-image 'fup'
+            background-size 100% 100%
+          &.span2
+            bg-image 'fup'
+            background-size 100% 100%
+            &.addred
+              bg-image 'fupred'
+              background-size 100% 100%
+          &.span3
+            bg-image 'fdown'
+            background-size 100% 100%
+            &.addred
+              bg-image 'fdwonred'
+              background-size 100% 100%
+  .all
+    width 100%
+    height 100%
+    display none
+    background-color rgba(0,0,0,.2)
+    position absolute
+    top px(189)
+    left px(0)
+    .hidden
+      width 100%
+      .comdiv
+        background-color #fff
+        width 100%
+        height px(60)
+        display flex
+        border-top px(1) solid #e9e9e9
+        div
+          flex 1
+          text-align center
+          line-height px(60)
+          font-size 13px
+          position relative
+          a
+            display inline-block
+            position relative
+            top px(8)
+            span
+              display block
+              width px(21)
+              height px(9)
+              margin-left px(8)
+              margin-bottom px(5)
+  .lists
+    margin-bottom px(110)
+    display flex
+    flex-flow row wrap
+    align-content flex-start
+    justify-content space-around
+    background-color #fff
+    padding 0 px(10)
+    .list
+      flex 0 0 px(349)
+      height px(520)
+      background-color #fff
+      margin-bottom px(16)
+      img
+        width px(349)
+        height px(349)
+      .command
+        margin-top px(10)
+        color #e90a25
+        font-size 17px
+        font-weight bold
+        line-height px(36)
+        padding 0 px(18)
+        height px(36)
+        overflow hidden
+      .name
+        a
+          margin-top px(10)
+          line-height px(33)
+          padding 0 px(18)
+          height px(64)
+          overflow hidden
+          font-size 13px
+          color #19191e

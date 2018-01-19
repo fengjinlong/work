@@ -1,0 +1,29 @@
+px(px)
+  //设计稿是750 所以基础值为75
+  return unit(px / 75, 'rem')
+
+bg-image($url)
+  background-image: url('../images/' + $url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+    background-image: url('../images/' + $url + "@3x.png")
+bg-image_jpg($url)
+  background-image: url('../images/' + $url + "@2x.jpg")
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3)
+    background-image: url('../images/' + $url + "@3x.jpg")
+// 变量
+s12 = 12px
+pcolor = #828282
+fred = #ef2c2a
+
+-pos(type, args)
+  i = 0
+  position: unquote(type)
+  {args[i]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+  {args[i += 1]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+
+absolute()
+  -pos('absolute', arguments)
+fixed()
+  -pos('fixed', arguments)
+relative()
+  -pos('relative', arguments)

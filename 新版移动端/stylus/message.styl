@@ -1,0 +1,249 @@
+@import '/px2rem.styl'
+@import 'common.css'
+
+html
+  background-color #efefef
+body
+  header
+    position fixed
+    top 0
+    left 0
+  .conn
+    width 100%
+    background-color #fff
+    position fixed
+    left 0
+    top px(100)
+    .header
+      display flex
+      height px(99)
+      border-top px(1) solid #d6d6d6
+      justify-content center
+      align-items center
+      padding-right px(23)
+      padding-left px(3)
+      a
+        flex 0 0 px(60)
+        &.a1
+          height px(37)
+          img
+            width px(19)
+            height px(37)
+            margin 0 auto
+        &.a2
+          height 100%
+          flex 1
+          img
+            width px(160)
+            height px(40)
+            margin px(28) auto 0
+        &.a3
+          height px(40)
+          img
+            width px(43)
+            height px(7)
+            margin px(16) auto 0
+    nav
+      background-color #fff
+      border-bottom px(1) solid #d1d2d2
+      height px(51)
+      ul
+        display flex
+        li
+          flex 1
+          text-align center
+          a
+            display inline
+            border-bottom px(2) solid transparent
+            color #5d5e5e
+            font-size 13px
+            padding px(16) px(30)
+            &.active
+              border-bottom px(2) solid #ff0000
+              color #ff0000
+  .fixedscrollx
+    width 100%
+    height px(264)
+  main
+      height px(720)
+      overflow hidden
+    .container
+      .items
+        float left
+        .item
+          h1
+            font-size 12px
+            color #7b7f80
+            text-align center
+            padding px(20)
+          .content 
+            width px(717)
+            height px(315)
+            margin 0 auto
+            background-color #fff
+            border px(1) solid #b5b6b6
+            .tit 
+              font-size 14px
+              color #000
+              padding px(30)
+            .con
+              display flex
+              .img
+                flex 0 0 px(185)
+                height px(185)
+                border px(1) solid #e2e2e2
+                border-radius px(5)
+                overflow hidden
+                margin-left px(30)
+                margin-right px(24)
+                img
+                  width 100%
+                  height 100%
+              .font 
+                flex 1
+                height px(187)
+                font-size 13px
+                color #686868
+              .left
+                flex 0 0 px(78)
+                display flex
+                justify-content center
+                align-items center
+                span
+                  display block
+                  width px(20)
+                  height px(23)
+                  bg-image 'myintegralright'
+                  background-size 100% 100%     
+          &.item1
+            .content
+              height px(153)
+              .tit
+                 padding px(20)
+                .font 
+                  height px(60)
+                  line-height px(60)
+                  overflow hidden
+                  padding-left px(30)
+                .left
+                  height px(60)
+          &.item2
+            .content
+              height px(231)
+              .con
+                .img
+                  flex 0 0 px(187)
+                  height px(99)
+                  border px(1) solid #e2e2e2
+                  bg-image 'quan'
+                  background-size 100% 100%  
+                .font 
+                  flex 1
+                  height px(99)
+                  font-size 13px
+                  padding-top px(2)
+                  color #686868
+                .left
+                  flex 0 0 px(78)
+                  display flex
+                  justify-content center
+                  align-items center
+                  height px(99)
+                  span
+                    display block
+                    width px(20)
+                    height px(23)
+                    bg-image 'myintegralright'
+                    background-size 100% 100% 
+          &.itemcheap
+            .content 
+              height px(554)
+              .bgimg
+                width px(671)
+                height px(270)
+                margin 0 auto
+                border-radius px(6)
+                img 
+                  width 100%
+                  height 100%
+              p
+                font-size 13px
+                color #686868
+                padding 0 px(26)
+                height px(62)
+                overflow hidden
+                margin-top px(18)
+              a 
+                height px(83)
+                line-height px(83)
+                margin 0 px(26)
+                margin-top px(20)
+                border-top px(1) solid #d2d2d2
+                span
+                  color #686868
+                  font-size 12px
+                  float left
+                  &.left
+                    float right
+                    display block
+                    width px(20)
+                    height px(23)
+                    margin-top px(30)
+                    bg-image 'myintegralright'
+                    background-size 100% 100% 
+          &.subscription
+            width px(719)
+            height px(478)
+            border px(1) solid #b5b6b6
+            background-color #fff
+            margin 0 auto
+            a 
+              display flex
+              margin px(16) px(20) 0 px(20)
+              padding-bottom px(16)
+              border-bottom px(1) solid #d2d2d2
+              img 
+                flex 0 0 flex(70)
+                height px(70)
+                margin-top px(6)
+              .name 
+                flex 1
+                height px(70)
+                padding-left px(20)
+                .titt
+                  display block
+                  font-size 14px
+                .time
+                  display block
+                  color #e83232
+                  font-size 12px
+              .left 
+                flex 0 0 px(20)
+                height px(70)
+                display flex
+                justify-content center
+                align-items center
+                span 
+                  display block
+                  width px(20)
+                  height px(23)
+                  bg-image 'myintegralright'
+                  background-size 100% 100% 
+            .tit 
+              font-size 16px
+              padding px(22) 0 px(20) px(21)
+            .subimg
+              width px(671)
+              height px(270)
+              border-radius px(6)
+              overflow hidden
+              margin 0 auto
+              img 
+                width 100%
+                height 100%
+              
+                  
+              
+              
+            
+            

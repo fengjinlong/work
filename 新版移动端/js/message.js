@@ -1,14 +1,20 @@
-  // 初始化
   initWidth()
   function initWidth() {
     var w = document.body.clientWidth;
-    $('.scrollx').width(w + 'px')
-    $('.touchlist').width(w + 'px')
-    $('.ad').width(w + 'px')
-    $('.tit').width(w + 'px')
-    $('.touchscroll').width(5 * w + 'px')
+    $('main').width(w + 'px')
+    $('.container').width(4 * w + 'px')
+    $('.items').width(w + 'px')
   }
-  var scrollOne = new BScroll('.scrollx',{
+  $('main').on("touchend", function () {
+    $('header input').blur()
+  })
+  $('header input').focus(function () {
+    $('.fix').hide()
+  })
+  $('header input').blur(function () {
+    $('.fix').show()
+  })
+  var scrollOne = new BScroll('main',{
     scrollX: true,
     momentum: false,
     click: true,
@@ -16,7 +22,6 @@
     snap: {
       threshold: 0.3,
       speed: 400
-      // stepY: 780
     }
   })
   scrollOne.on('scrollEnd', function (pos) {

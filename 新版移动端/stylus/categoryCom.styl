@@ -1,0 +1,321 @@
+@import '/px2rem.styl'
+@import 'common.css'
+
+body
+  width 100%
+  height 100%
+  background-color #efefef
+  a
+    display block
+    text-decoration none
+  img
+    display block  
+  header
+    height px(100)
+    width 100%
+    display flex
+    background-color #f4f4f4
+    border-bottom 1px solid #b5b5b5
+    .logo
+      flex 0 0 px(155)
+      a
+        display block
+        width px(131)
+        height px(38)
+        margin-left px(10)
+        margin-top px(30)
+        bg-image 'logo'
+        background-size 100% 100%
+    .input
+      background-color #fff
+      height px(70)
+      flex 1
+      margin-top px(15)
+      display flex
+      border-radius px(4)
+      input
+        flex 1
+        height 100%
+        font-size 13px
+        border none
+        padding-left px(26)
+      a
+        display block
+        flex 0 0 px(38)
+        margin px(16)
+        height px(38)
+        bg-image 'search'
+        background-size 100% 100%
+    .buycart
+      flex 0 0 px(100)
+      a
+        display block
+        margin-top px(25)
+        margin-left px(16)
+        width px(64)
+        height px(51)
+        bg-image 'buycart'
+        background-size 100% 100%
+        position relative
+        span
+          display block
+          width px(41)
+          height (41)
+          text-align center
+          line-height px(41)
+          color #fff
+          font-size 12px
+          background-color #e9714e
+          border-radius 100%
+          position absolute
+          top px(-16px)
+          right px(-10px)
+  main
+    display flex
+    nav
+      flex 0 0 px(177)
+      height px(950)
+      overflow hidden
+      ul
+        li
+          width 100%
+          height px(96)
+          line-height px(96)
+          font-size 14px
+          color #000
+          text-align center
+          background-color #fff
+          position relative
+          margin-bottom px(4)
+          span
+            display none
+            width px(10)
+            height px(94)
+            position absolute
+            top px(2)
+            left px(0)
+            background-color #ffab47
+          &.active
+            background-color #efefef
+            span
+              display block
+    .content
+      flex 1
+      .scrollTwo
+        width 100%
+        height px(950)
+        overflow hidden
+        .lists
+          .list
+            width 100%
+            min-height px(950)
+            &.list0
+              margin-bottom px(10)
+              .ad
+                margin-bottom px(30)
+                a
+                  display block
+                  width 100%
+                  height px(189)
+                  img
+                    width 100%
+                    height 100%
+                .divt
+                  display flex
+                  justify-content center
+                  a
+                    display block
+                    flex 0 0 px(264)
+                    height px(149)
+                    margin-top px(18)
+                    bg-image 'jiang'
+                    background-size 100% 100%
+                    &.a
+                      margin-right px(12)
+                      bg-image 'xian'
+                      background-size 100% 100%
+              .recommends
+                padding-bottom px(36)
+                p
+                  font-size s12
+                  color pcolor
+                  padding-left px(17)
+                  padding-bottom px(18)
+                .recommend
+                  display flex
+                  flex-flow row wrap
+                  align-content flex-start
+                  a
+                    width px(171)
+                    height px(203)
+                    background-color #fff
+                    margin-left px(14)
+                    margin-bottom px(10)
+                    span
+                      font-size s12
+                      color #000
+                      display block
+                      text-align center
+                      padding-top px(14)
+                    img
+                      width px(150)
+                      height px(150)
+                      margin 0 auto
+              .hot
+                padding-top px(36)
+                p
+                  font-size s12
+                  color pcolor
+                  padding-left px(17)
+                  padding-bottom px(18)
+                .recommend
+                  display flex
+                  flex-flow row wrap
+                  align-content flex-start
+                  a
+                    flex 0 0 px(171)
+                    height px(203)
+                    background-color #fff
+                    margin-left px(14)
+                    margin-bottom px(10)
+                    span
+                      font-size s12
+                      color #000
+                      display block
+                      text-align center
+                      padding-top px(14)
+                    img
+                      width px(150)
+                      height px(150)
+                      margin 0 auto
+            &.list1
+            &.list2
+            &.list3
+            &.list4
+            &.list5
+            &.list6
+            &.list7
+            &.list8
+            &.list9
+            &.list10
+              margin-bottom px(10)
+              .ad
+                margin-bottom px(30)
+                a
+                  display block
+                  width 100%
+                  height px(189)
+                  img
+                    width 100%
+                    height 100%
+              .divt
+                a
+                  width px(541)
+                  height px(131)
+                  margin px(18) auto 0
+                  bg-image 'enter'
+                  background-size 100% 100%
+              .recommends
+                padding-bottom px(36)
+                p
+                  font-size s12
+                  color pcolor
+                  padding-left px(17)
+                  padding-bottom px(18)
+                .recommend
+                  display flex
+                  flex-flow row wrap
+                  align-content flex-start
+                  a
+                    width px(171)
+                    height px(203)
+                    background-color #fff
+                    margin-left px(14)
+                    margin-bottom px(10)
+                    span
+                      font-size s12
+                      color #000
+                      display block
+                      text-align center
+                      padding-top px(14)
+                    img
+                      width px(150)
+                      height px(150)
+                      margin 0 auto
+              .hot
+                padding-top px(36)
+                p
+                  font-size s12
+                  color pcolor
+                  padding-left px(17)
+                  padding-bottom px(18)
+                .recommend
+                  display flex
+                  flex-flow row wrap
+                  align-content flex-start
+                  a
+                    flex 0 0 px(171)
+                    height px(203)
+                    background-color #fff
+                    margin-left px(14)
+                    margin-bottom px(10)
+                    span
+                      font-size s12
+                      color #000
+                      display block
+                      text-align center
+                      padding-top px(14)
+                    img
+                      width px(150)
+                      height px(150)
+                      margin 0 auto
+            &.list1
+              .divt
+                a
+                  bg-image 'packagefont'
+                  background-size 100% 100%
+            &.list2
+              .divt
+                a
+                  bg-image 'watchfont'
+                  background-size 100% 100% 
+            &.list3
+              .divt
+                a
+                  bg-image 'jewelryfont'
+                  background-size 100% 100%
+            &.list4
+              .divt
+                a
+                  bg-image 'makeupfont'
+                  background-size 100% 100% 
+            &.list5
+              .divt
+                a
+                  bg-image 'babyfont'
+                  background-size 100% 100% 
+            &.list6
+              .divt
+                a
+                  bg-image 'usuallyfont'
+                  background-size 100% 100% 
+            &.list7
+              .divt
+                a
+                  bg-image 'personalfont'
+                  background-size 100% 100% 
+            &.list8
+              .divt
+                a
+                  bg-image 'digitalfont'
+                  background-size 100% 100%        
+            &.list9
+              .divt
+                a
+                  bg-image 'kitchenfont'
+                  background-size 100% 100%
+            &.list10
+              .divt
+                a
+                  bg-image 'foodfont'
+                  background-size 100% 100%

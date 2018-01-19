@@ -1,0 +1,114 @@
+@import '/px2rem.styl'
+@import 'common.css'
+
+body
+  header
+    position relative
+    z-index 666
+  main
+    relative
+    width 100%
+    .fixdiv
+      width 100%
+      height px(1800)
+    .bg
+      position relative
+      top px(0)
+      left 0
+      z-index 0
+      width 100%
+      height px(478)
+      bg-image 'myintegralbg'
+      transform-origin top
+      background-size cover
+      &.ztop
+        z-index 666
+      .tit 
+        height px(90)
+        line-height px(90)
+        display flex
+        padding 0 px(40)
+        div
+          flex 1
+          &.a1
+            a
+              width px(19)
+              height px(37)
+              margin-top px(25)
+              bg-image 'myintegralback'
+              background-size 100% 100%
+          &.a2
+            text-align center
+            color #fff
+            font-size 17px
+          &.a3
+            a
+              font-size 13px
+              text-align right
+              color #fff
+      .numm
+        color #fff 
+        text-align center
+        padding-top px(40)
+        span
+          font-size 49px
+          &.span1
+            font-size 13px
+      .choosespan
+        text-align center
+        span 
+          display inline-block
+          border-radius px(5)
+          width px(200)
+          height px(55)
+          line-height px(55)
+          text-align center
+          background-color #fff
+          color #f49f1c
+          font-size 12px
+          margin px(45) px(6) px(35) px(6)
+          &.active
+            background-color #f49f1c
+            color #fff
+      .font
+        font-size 13px
+        text-align center
+        color #fff
+    .contentt
+      display none
+    .contentt,
+    .contentt2
+      width 100%
+      height px(380)
+      background-color #f5f5f5
+      .content1
+        background-color #f5f5f5
+        .list
+          h1
+            color #7b7f80
+            text-align center
+            font-size 12px
+            padding px(35) 0 px(20) 0
+          a
+            background-color #fff
+            margin 0 auto
+            width px(719)
+            height px(88)
+            line-height px(88)
+            margin-bottom px(25)
+            display flex
+            p
+              &.font
+                flex 1
+                font-size 12px
+                padding 0 px(30)
+                overflow hidden
+              &.icon
+                flex 0 0 px(54)
+                span
+                  display block
+                  width px(20)
+                  height px(23)
+                  margin px(32) px(34) 0 0
+                  bg-image 'myintegralright'
+                  background-size 100% 100%

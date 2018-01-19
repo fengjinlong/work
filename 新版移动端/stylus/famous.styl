@@ -1,0 +1,154 @@
+@import '/px2rem.styl'
+@import 'common.css'
+
+
+html
+  background-color #efefef
+body
+  header
+    position fixed
+    top 0
+    left 0
+  .conn
+    width 100%
+    background-color #fff
+    position fixed
+    left 0
+    top px(100)
+    .header
+      display flex
+      height px(99)
+      border-top px(1) solid #d6d6d6
+      justify-content center
+      align-items center
+      padding-right px(23)
+      padding-left px(3)
+      a
+        flex 0 0 px(60)
+        &.a1
+          height px(37)
+          img
+            width px(19)
+            height px(37)
+            margin 0 auto
+        &.a2
+          height 100%
+          flex 1
+          img
+            width px(133)
+            height px(37)
+            margin px(31) auto 0
+        &.a3
+          height px(40)
+          img
+            width px(43)
+            height px(7)
+            margin px(16) auto 0
+    nav
+      background-color #fff
+      border-bottom px(1) solid #d1d2d2
+      height px(51)
+      ul
+        display flex
+        li
+          flex 1
+          text-align center
+          a
+            display inline
+            border-bottom px(2) solid transparent
+            color #5d5e5e
+            font-size 13px
+            padding px(16) px(4)
+            &.active
+              border-bottom px(2) solid fred
+              color fred
+  .fixedscrollx
+    width 100%
+    height px(264)
+  .scrollx
+    height px(720)
+    overflow hidden
+    position relative
+    .touchscroll
+      .touchlist
+        float left
+        .ad
+          height px(300)
+          padding-top px(25)
+          background-color #efefef
+          a
+            width px(714)
+            height px(283)
+            margin 0 auto
+            // bg-image 'fad'
+            // background-size 100% 100%
+            img
+              width 100%
+              height 100%
+        .tit
+          height px(60)
+          background-color #efefef
+          span
+            display block
+            width px(546)
+            height px(24)
+            bg-image 'span'
+            background-size 100% 100%
+            margin px(20) auto 0
+        .lists
+          display flex
+          flex-flow row wrap
+          align-content flex-start
+          justify-content space-around
+          padding 0 px(10)
+          .list
+            flex 0 0 px(349)
+            height px(588)
+            background-color #fff
+            margin-bottom px(16)
+            img
+              width px(349)
+              height px(349)
+            .price
+              margin-top px(20)
+              .span1
+                font-size 14px
+                margin-left px(18)
+              .span2
+              .span3
+                margin-left px(18)
+                color #939393
+                font-size 12px
+              .span2
+                text-decoration line-through
+            .command
+              margin-top px(10)
+              color fred
+              font-size s12
+              line-height px(30)
+              padding 0 px(18)
+              height px(28)
+              overflow hidden
+            .name
+              a
+                margin-top px(10)
+                padding 0 px(18)
+                height px(56)
+                overflow hidden
+                font-size 12px
+            .btn
+              a
+                font-size 12px
+                float left
+                margin-top px(18)
+                span 
+                  font-size 12px
+                  color fred
+                &.link
+                  margin px(18)
+                  color fred
+                  width px(62)
+                  height px(33)
+                  line-height px(33)
+                  text-align  center
+                  border  px(1) solid fred

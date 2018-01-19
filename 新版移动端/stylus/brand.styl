@@ -1,0 +1,86 @@
+@import '/px2rem.styl'
+@import 'common.css'
+
+html
+  background-color #efefef
+body
+  header
+    height px(100)
+    width 100%
+    display flex
+    background-color #f4f4f4
+    border-bottom 1px solid #b5b5b5
+    position fixed
+    top 0
+    left 0
+  .conn
+    width 100%
+    background-color #f0f2f2
+    margin-top px(100)
+    // position fixed
+    // top px(101)
+    // z-index 666
+    .header
+      display flex
+      height px(99)
+      border-top px(1) solid #d6d6d6
+      justify-content center
+      align-items center
+      padding-right px(23)
+      padding-left px(3)
+      a
+        flex 0 0 px(60)
+        &.a1
+          height px(37)
+          img
+            width px(19)
+            height px(37)
+            margin 0 auto
+        &.a2
+          height 100%
+          flex 1
+          img
+            width px(80)
+            height px(40)
+            margin px(31) auto 0
+        &.a3
+          height px(40)
+          img
+            width px(43)
+            height px(7)
+            margin px(16) auto 0
+  .lists
+    margin-bottom px(110)
+    display flex
+    flex-flow row wrap
+    align-content flex-start
+    justify-content space-around
+    padding 0 px(20)
+    background-color #fff
+    .list
+      flex 0 0 px(341)
+      height px(616)
+      background-color #fff
+      margin-bottom px(43)
+      background-color #f7f7f7
+      img
+        width px(341)
+        height px(416)
+      .name
+        text-align center
+        color #000
+        font-size 12px
+        padding-top px(16)
+        &.name1
+          font-size 14px
+          padding-top px(26)
+      .btn
+        a
+          width px(180)
+          height px(46)
+          line-height px(46)
+          text-align  center
+          color #000
+          border  px(2) solid #000
+          margin 0 auto
+          margin-top px(20)

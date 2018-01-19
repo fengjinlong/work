@@ -1,0 +1,202 @@
+@import '/px2rem.styl'
+@import 'common.css'
+body
+  header
+    height px(100)
+    width 100%
+    display flex
+    background-color #f4f4f4
+    border-bottom px(1) solid #b5b5b5
+    position fixed
+    top 0
+    left 0
+    z-index 666
+  .conn
+    width 100%
+    background-color #fff
+    margin-top px(100)
+    .header
+      display flex
+      height px(110)
+      border-top px(1) solid #d6d6d6
+      justify-content center
+      align-items center
+      padding-right px(40)
+      padding-left px(20)
+      a
+        flex 0 0 px(60)
+        &.a1
+          height px(37)
+          img
+            width px(19)
+            height px(37)
+            margin 0 auto
+        &.a2
+          height 100%
+          flex 1
+          img
+            width px(181)
+            height px(38)
+            margin px(33) auto 0
+        &.a3
+          height px(40)
+          img
+            width px(43)
+            height px(7)
+            margin px(16) auto 0
+    .time
+      display flex
+      background-color #fff
+      height px(93)
+      .item
+        margin-top px(4)
+        flex 1
+        position relative
+        span
+          display block
+          text-align center
+          color #5d5e5e
+          &.span1
+            font-size 16px
+            font-weight bold
+          &.span2
+            font-size 13px
+        &.active
+          margin-top 0
+          span
+            position relative
+            color #f12929
+            &.span1
+              top px(-6)
+              font-size 20px
+            &.span2
+              top px(-6)
+  .items
+    width 100%
+    display flex
+    justify-content space-around
+    padding-top px(22)
+    padding-bottom px(18)
+    background-color #efefef
+    a
+      width px(346)
+      height px(203)
+      bg-image 'itee1'
+      background-size 100% 100%
+      &.a
+        bg-image 'itee2'
+        background-size 100% 100%
+  .contain
+    .scroll
+      .tit
+        display flex
+        margin-top px(35)
+        .left
+          color #222325
+          font-size 13px
+          text-align left
+          flex 1
+          padding-left px(18)
+        .right
+          color #686868
+          font-size 13px
+          text-align right
+          flex 1
+          padding-right px(18)
+          span
+            display inline-block
+            width px(41)
+            height px(34)
+            border-radius px(5)
+            line-height px(34)
+            text-align center
+            color #fff
+            background-color #232426
+            &.span1
+              margin-left px(12)
+      .lists
+        background-color #fff
+        padding 0 px(20)
+        margin-top px(10)
+        margin-bottom px(120)
+        .list
+          display flex
+          height px(245)
+          padding-top px(25)
+          border-bottom px(1) solid #d0d0d0
+          &:last-child
+            border none
+          .img
+            flex 0 0 px(245)
+            width px(220)
+            height px(220)
+            overflow hidden
+            border-radius px(6)
+            img
+              width 100%
+              height 100%
+          .con
+            flex 1
+            p
+              font-size 14px
+              color #232326
+              height px(72)
+              line-height px(38)
+              overflow hidden
+            .font
+              display flex
+              margin-top px(40)
+              .pice
+                flex 0 0 px(150)
+                padding-top px(30)
+                p
+                  font-size 18px
+                  color #ef2c2a
+                  height px(38)
+                  &.new
+                    font-weight bold
+                    margin-bottom px(6)
+                  &.old
+                    font-size 13px
+                    color #818587
+                    text-decoration line-through
+                    height px(30)
+              .bnu
+                flex 1
+                .btn
+                  text-align right
+                  button
+                    width px(177)
+                    height px(67)
+                    line-height px(67)
+                    border-radius px(10)
+                    background-color #ef2c2a
+                    text-align center
+                    font-size 17px
+                    border none
+                    color #fff
+                    margin-bottom px(10)
+                .progress
+                  overflow hidden
+                  .pro
+                    float right
+                    width px(178)
+                    height px(14)
+                    border-radius px(14)
+                    border px(1) solid #ef2c2a
+                    position relative
+                    background-color transparent
+                    margin-top px(8)
+                    margin-left px(20)
+                    span
+                      display inline-block
+                      position absolute
+                      top 0
+                      left 0
+                      width 66%
+                      height px(14)
+                      border-radius px(14)
+                      background-color #ef2c2a
+                  .span
+                    float right
+          
